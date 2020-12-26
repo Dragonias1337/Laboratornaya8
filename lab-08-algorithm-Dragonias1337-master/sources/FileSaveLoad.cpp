@@ -64,7 +64,7 @@ bool hasStudentExcellentMathMark(Student s1)
 }
 
 
-//целевые функции
+
 void SortByName(vector<Student> &vec)
 {
 	sort(vec.begin(), vec.end(), greaterString);
@@ -130,39 +130,9 @@ vector<Group> Groups(const vector<Student> &vec)
 
 
 
-//отладка, примеры, и т.д. 
+
 int main()
 {
-	vector<Student> students;
-
-	vector<unsigned> marks1 = { 3,5,5,5 };
-	vector<string> subjects = { "Math","Russian","English","Physics" };
-	vector<unsigned> marks2 = { 5,4,4,4 };
-	vector<unsigned> marks3 = { 5,5,5,5 };
-
-	Student s1;
-	s1.Name = "Misyura A.S.";
-	s1.GroupId = "IU8_13";
-	s1.Ratings = marks1;
-	s1.Subjects = subjects;
-	Student s2;
-	s2.Name = "Sandjiev T.S.";
-	s2.GroupId = "IU8_13";
-	s2.Ratings = marks2;
-	s2.Subjects = subjects;
-	Student s3;
-	s3.Name = "Ivanov I.I.";
-	s3.GroupId = "IU13_37";
-	s3.Ratings = marks3;
-	s3.Subjects = subjects;
-
-
-	students.push_back(s1);
-	students.push_back(s2);
-	students.push_back(s3);
-
-	getch();
-
-	return 0;
+	
 }
 
